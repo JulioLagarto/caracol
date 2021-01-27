@@ -1,0 +1,37 @@
+body, html {
+  min-height: 100%;
+}
+
+body {
+  background-image: url("../media/cartografia.jpg");
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.logo {
+  height: 400px;
+  width: auto;
+}
+
+img {
+  max-width: 100%;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+/*# sourceMappingURL=styleIndex.css.map */
