@@ -4,7 +4,6 @@
   border: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  text-decoration: none;
 }
 
 body, html {
@@ -12,10 +11,13 @@ body, html {
 }
 
 body {
-  background-image: url("../media/cartografiav2.jpg");
   background-color: grey;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+p {
+  text-align: justify;
 }
 
 img {
@@ -25,10 +27,9 @@ img {
 }
 
 .container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (0.5fr)[12];
-      grid-template-rows: repeat(12, 0.5fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -50,31 +51,4 @@ img {
   top: 0px;
   left: 0px;
 }
-
-.creditos {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-  background-color: rgba(224, 224, 224, 0.9);
-  display: -ms-grid;
-  display: grid;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  justify-items: center;
-}
-
-.creditos div h3 {
-  color: rgba(255, 254, 244, 0.8);
-}
-
-.aviso {
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 1;
-  grid-row: 5/6;
-  color: aliceblue;
-}
-
-.aviso a {
-  color: rgba(255, 254, 244, 0.8);
-}
-/*# sourceMappingURL=styleIndex.css.map */
+/*# sourceMappingURL=stileAviso.css.map */

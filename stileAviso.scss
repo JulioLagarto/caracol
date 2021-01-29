@@ -3,7 +3,6 @@
     margin:0px;
     border:0px;
     box-sizing: border-box;
-    text-decoration: none;
     
 }
 
@@ -14,11 +13,14 @@ body,html
 
 body 
 {
-    background-image: url("../media/cartografiav2.jpg");
+    
     background-color: grey;
     background-repeat: no-repeat;
     background-size: cover;
    }
+p{
+    text-align: justify;
+}
 
    img{
     max-width: 100%;
@@ -29,8 +31,7 @@ body
 
 .container
 {    
-    display: grid;
-    grid-template-rows: repeat(12,.5fr) ;
+    display: flex;
     justify-content: center;
     align-content: center;
     height: fit-content;
@@ -52,31 +53,8 @@ body
     left:0px;
 }
 
-
 .creditos{
-    
-    grid-row: 3/4;
-    background-color: rgba(224, 224, 224, 0.9);
-    display: grid;
-    align-content: center;
-    justify-items : center;
 
-    div{
-        h3{
-            color:rgba(255, 254, 244, 0.8);
-        }
-    }
-    .institucional{
-        
-        
-   }
-}
-
-.aviso {
-    grid-row:5/6 ;
-    color:aliceblue;
-    a{
-        color:rgba(255, 254, 244, 0.8);
-    }
     
+
 }
