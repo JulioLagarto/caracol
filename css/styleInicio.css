@@ -45,6 +45,7 @@ nav {
   grid-row: 4/5;
   padding: 2em;
   border-radius: 3px;
+  font-size: small;
 }
 
 #slide {
