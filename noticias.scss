@@ -1,0 +1,39 @@
+*{    
+    border:0px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+    
+}
+
+.container{
+display: grid;
+grid-template-columns: repeat(7,1fr);
+grid-template-rows: repeat(12,1fr);
+
+}
+
+nav{
+    grid-column: 1/8;
+    grid-row: 9/10;
+    background-color: orange;
+    
+    align-self: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.articulo {
+    background-color: rgba(0,0,0,0.6);
+    color:aliceblue;
+    grid-column: 2/7;
+    grid-row: 4/5;
+    padding: 2em;
+    border-radius: 3px;
+
+
+}
+
