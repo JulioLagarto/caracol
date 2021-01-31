@@ -1,5 +1,1 @@
 
-var = $ajusteImagen;
-
-
-$ajusteImagen=../;
