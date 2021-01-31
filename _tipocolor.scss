@@ -1,0 +1,27 @@
+//FUENTES
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+$fuente: 'Yusei Magic', sans-serif;
+    
+
+p{
+    font-family: $fuente;
+    font-weight: lighter;
+}
+
+h1,h2,h3,h4,h5,h6, li{
+    font-family: $fuente;
+}
+
+
+//PALETA DE COLOR
+
+$c_azulosc:#31485F;
+$c_azulind:#4C4974;
+$c_rojo:#B33317;
+$c_verde:#5C8585;
+$c_naranja:#F7B069;
+$c_amarillo:#FEE7B0;
+$c_gris:#DAD7CA;
+$c_beige:#E6CCB5;
+

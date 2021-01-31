@@ -1,3 +1,4 @@
+@import "header";
 
 *{    
     border:0px;
@@ -16,6 +17,7 @@ grid-template-columns: repeat(7,1fr);
 grid-template-rows: repeat(12,1fr);
 }
 
+
 .articulo {
     background-color: rgba(0,0,0,0.6);
     color:aliceblue;
@@ -24,3 +26,5 @@ grid-template-rows: repeat(12,1fr);
     padding: 2em;
     border-radius: 3px;
 }
+
+

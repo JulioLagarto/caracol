@@ -1,3 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+p {
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: lighter;
+}
+
+h1, h2, h3, h4, h5, h6, li {
+  font-family: "Yusei Magic", sans-serif;
+}
+
+nav {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  background-color: #F7B069;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(min-content, 100px) min-content;
+      grid-template-rows: minmax(-webkit-min-content, 100px) -webkit-min-content;
+      grid-template-rows: minmax(min-content, 100px) min-content;
+}
+
+nav .menu-content {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  grid-auto-flow: column;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+}
+
+nav .menu-content div {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  grid-auto-flow: column;
+  place-items: center;
+}
+
+nav .menu-content div a {
+  padding: 25px;
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: bolder;
+  color: #4C4974;
+}
+
+nav .menu-content div a:hover {
+  color: #B33317;
+}
+
 * {
   border: 0px;
   margin: 0px;
@@ -23,31 +76,6 @@ img {
       grid-template-rows: repeat(12, 100px);
 }
 
-nav {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 12;
-  grid-column: 1/13;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  background-color: rgba(0, 0, 0, 0);
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2em;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  color: black;
-}
-
 header {
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
@@ -71,8 +99,8 @@ header .titulo {
 }
 
 .articulo {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: aliceblue;
+  background-color: #DAD7CA;
+  color: #5C8585;
   -ms-grid-column: 2;
   -ms-grid-column-span: 10;
   grid-column: 2/12;

@@ -1,3 +1,5 @@
+@import "tipocolor";
+@import "header";
 *{    
     border:0px;
     margin: 0px;
@@ -24,30 +26,7 @@ grid-template-rows: repeat(12,100px);
 
 
 
-nav{
-    grid-column: 1/13;
-    grid-row: 1/2;
-    background-color:rgba(0,0,0,0);
-    
-    align-self: center;
-    justify-content: center;
-    padding: 2em;
-    ul{
-        
 
-        li {
-
-            display: inline;
-            a{
-                
-            color: rgba(0,0,0,1);
-
-            }
-            
-        }
-    }
-
-}
 
 header{
     grid-column: 1/13;
@@ -76,8 +55,8 @@ header{
 }
 
 .articulo {
-    background-color: rgba(0,0,0,0.6);
-    color:aliceblue;
+    background-color:$c_gris;
+    color:$c_verde;
     grid-column: 2/12;
     grid-row: 5/12;
     padding: 2em;

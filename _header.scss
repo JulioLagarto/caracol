@@ -1,17 +1,41 @@
  
- 
-        nav{
-                ul{
-                    display: inline;
-                    li{
-                        display: inline;
-                        a{
-                            display: inline;
-                            background-color: aquamarine;
-                            color: black;
-                        }
-                    }
-                }
 
+nav{
+    grid-column: 1/13;
+    grid-row: 1/2;
+    background-color: $c_naranja;
+    display:grid;
+    grid-template-rows: minmax(min-content,100px) min-content;
+    
+    
+    
+
+
+    .menu-content{
+        display: grid;
+        place-items: center;
+        grid-auto-flow: column;
+        align-content: space-evenly;
+        
+        
+            div{
+                display:grid;
+                grid-gap:15px;
+                grid-auto-flow: column;
+                //grid-auto-columns: minmax(min-content,200px);
+                place-items: center;
+                a{
+                    padding: 25px;
+                    font-family: $fuente;
+                    font-weight: bolder;
+                    color: $c_azulind;
+                }
+                a:hover{
+                    color:$c_rojo;
+
+                }
             }
+
+        }
+    }
         
