@@ -17,23 +17,6 @@
       grid-template-rows: repeat(12, 1fr);
 }
 
-nav {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 7;
-  grid-column: 1/8;
-  -ms-grid-row: 9;
-  -ms-grid-row-span: 1;
-  grid-row: 9/10;
-  background-color: orange;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2em;
-}
-
 .articulo {
   background-color: rgba(0, 0, 0, 0.6);
   color: aliceblue;
