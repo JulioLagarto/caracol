@@ -35,7 +35,7 @@ body
 .container
 {    
     display: grid;
-    grid-template-rows: 140px 100px minmax(200px,500px) 50px auto;
+    grid-template-rows: 140px 100px minmax(200px,min-content) 50px auto;
     justify-content: center;
     align-content: center;
     height: fit-content;
@@ -109,7 +109,7 @@ body
            
             
             position: relative;
-            margin: 10px;
+            padding: 10px;
             
             width:500px;
         
@@ -132,10 +132,12 @@ body
 }
 
 .aviso {
-    grid-row:11/12;
-    color:aliceblue;
+    grid-row:7/8;
+    background-color: $c_gris;
+    
     a{
-        color:$c_amarillo;
+        font-family:$fuente ;
+        color:$c_rojo;
     }
     
 }
