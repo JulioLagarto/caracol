@@ -72,14 +72,15 @@ nav .menu-content .menu-icon:hover {
 }
 
 nav .dropdown {
+  grid-auto-rows: 80px;
   background-color: #F7B069;
   text-align: center;
   display: none;
-  grid-area: "overlap";
+  z-index: 1;
 }
 
 nav .dropdown a {
-  padding: 25px;
+  padding: none;
   font-family: "Yusei Magic", sans-serif;
   font-weight: bolder;
   color: #4C4974;

@@ -10,37 +10,82 @@
     <title>Cartografías de una Ciudad Imaginada</title>
     <link rel="icon" href="media/logoico.ico">
     <link rel="stylesheet" type="text/css" href="css/Stylenoticias.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   </head>
   <body>
    
     <div class="container">
       
-      
-        <nav>
-          <ul class="navegacion">
-            <li><a href="noticias.html">Noticias</a></li>
-            <li><a href="inicio.html">Cartografías de una Ciudad Imaginada</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="dispositivoEscenico.html">Dispositivo Escénico</a></li>
-          </ul>
-        </nav>
+      <nav>
+        <div class="menu-content">
+          <div></div>
+          
+          <div class="menu-links">
+            <div><a href="noticias.html">Noticias</a></div>
+            <div><a href="inicio.html">Cartografías de una Ciudad Imaginada</a></div>
+            <div><a href="proyectos.html">Proyectos</a></div>
+            <div><a href="dispositivoEscenico.html">Dispositivo Escénico</a></div>
+          </div>
+          
+          <i class="material-icons menu-icon" onclick="menu()">menu</i>
+        
+        </div>
+
+        <div class="dropdown">
+          <div><a href="noticias.html">Noticias</a></div>
+            <div><a href="inicio.html">Cartografías de una Ciudad Imaginada</a></div>
+            <div><a href="proyectos.html">Proyectos</a></div>
+            <div><a href="dispositivoEscenico.html">Dispositivo Escénico</a></div>
+
+        </div>
+
+      </nav>
+
       
 
-      <article class="articulo">
-        <h3>Cartografías de una Ciudad Imaginada</h3>
-      </br>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem consectetur dignissimos nesciunt excepturi dolore doloribus, ex cupiditate fugit provident deserunt debitis tempore corrupti, suscipit inventore animi eius aut obcaecati velit.</p>
-      </article>
+     
+      <section class="slide"></section>
 
         
     
-        <footer>
-
+        <footer class="redes">
+          <div class="enlaces">
+            <div><img src="media/logoCaracolColor.png"> </div>
+            <div><a href="https://www.facebook.com/caracolcolectivoartistico"><img src="media/fbicon.png"> </a> </div>
+            <div><a href="https://www.instagram.com/stories/caracolcolectivo/2499591989768814237/"><img src="media/IGicon.png"> </a> </div>
+            <div><a href="https://twitter.com/caracoltlaxcala"><img src="media/twicon.png"> </a> </div>
+            <div><a href="https://www.youtube.com/channel/UC5JROus4hKD9pE35WTBQpqQ"><img src="media/YTicon.png"> </a> </div>
+          </div>
+          <div class="aviso"><a hrer="avisodePrivacidad.html" >Aviso de privacidad</a> </div>
         </footer>
 
     </div>
+    
+    <script>
+      var dropdown = document.querySelector("nav .dropdown ");
+      var toggle = document.querySelector("nav .menu-icon");
       
+      function menu(){
+        if(dropdown.style.display === "grid"){
+          dropdown.style.display = "none";
+          toggle.innerHTML = "menu";
+        }
+        else{
+          dropdown.style.display = "grid";
+          toggle.innerHTML = "close";
+        }
+        
+        }
+
+        window.addEventListener("resize", function() {
+    if (window.innerWidth > 700) {
+        dropdown.style.display = "none";
+        toggle.innerHTML = "menu";
+        }
+    })    
+       
+    </script>
 
   </body>
 </html>
