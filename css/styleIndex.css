@@ -8,6 +8,42 @@ h1, h2, h3, h4, h5, h6, li {
   font-family: "Yusei Magic", sans-serif;
 }
 
+.redes {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  grid-row: 7/8;
+  background-color: #DAD7CA;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  display: grid;
+  -ms-grid-rows: 100px 30px;
+      grid-template-rows: 100px 30px;
+}
+
+.redes .enlaces {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.redes .enlaces img {
+  max-height: 90px;
+}
+
+.redes .aviso {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
 * {
   padding: 0px;
   margin: 0px;
