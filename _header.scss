@@ -18,12 +18,14 @@ nav{
         align-content: space-evenly;
         
         
-            div{
+            .menu-links{
                 display:grid;
                 grid-gap:15px;
-                grid-auto-flow: column;
-                //grid-auto-columns: minmax(min-content,200px);
                 place-items: center;
+                grid-auto-flow: column;
+                grid-auto-columns: minmax(min-content,200px);
+                place-items: center;
+                   
                 a{
                     padding: 25px;
                     font-family: $fuente;
@@ -32,10 +34,62 @@ nav{
                 }
                 a:hover{
                     color:$c_rojo;
-
+                    font-size: 20px;
+                    
                 }
+ 
+            }
+
+            .menu-icon{
+                color: $c_azulind;
+                display:none;
+                
+            }
+
+            .menu-icon:hover{
+                color:$c_rojo;
+                cursor:pointer;
+                user-select:none;
+                -webkit-user-select: none;
+
             }
 
         }
+
+        .dropdown{
+          
+            background-color: $c_naranja;
+            text-align: center;
+            display: none;
+
+            a{
+                padding: 25px;
+                    font-family: $fuente;
+                    font-weight: bolder;
+                    color: $c_azulind;
+            }
+            a:hover{
+                color:$c_rojo;
+            }
+        }
+
     }
         
+@media  (max-width:700px){
+
+        nav {
+            
+            .menu-content{
+                
+                .menu-icon{
+                    display:initial;
+                }
+                
+                .menu-links{
+                    display:none;
+                }
+
+            }
+        }
+
+    }

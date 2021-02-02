@@ -104,7 +104,7 @@ img {
 
 .creditos .fonca img {
   position: relative;
-  padding: 10px;
+  padding: 0px 10px 0px 10px;
   width: 500px;
 }
 
@@ -114,18 +114,6 @@ img {
   grid-column: 1/5;
   color: #A51D3B;
   text-align: center;
-  font-size: xx-small;
-}
-
-.aviso {
-  -ms-grid-row: 7;
-  -ms-grid-row-span: 1;
-  grid-row: 7/8;
-  background-color: #DAD7CA;
-}
-
-.aviso a {
-  font-family: "Yusei Magic", sans-serif;
-  color: #B33317;
+  font-size: smaller;
 }
 /*# sourceMappingURL=styleIndex.css.map */

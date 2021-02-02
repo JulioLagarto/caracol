@@ -19,26 +19,37 @@
       
       <nav>
         <div class="menu-content">
-          <div><a href="noticias.html">Noticias</a></div>
-          <div><a href="inicio.html">Cartografías de una Ciudad Imaginada</a></div>
-          <div><a href="proyectos.html">Proyectos</a></div>
-          <div><a href="dispositivoEscenico.html">Dispositivo Escénico</a></div>
-        </div>
+          <div>Acá va el logocaracol</div>
+          
+          <div class="menu-links">
+            <div><a href="noticias.html">Noticias</a></div>
+            <div><a href="inicio.html">Cartografías de una Ciudad Imaginada</a></div>
+            <div><a href="proyectos.html">Proyectos</a></div>
+            <div><a href="dispositivoEscenico.html">Dispositivo Escénico</a></div>
+          </div>
+          
+          <i class="material-icons menu-icon" onclick="menu()">menu</i>
         
-        <i class="material-icons menu">menu</i>
-      
-        <div class="menu-toggle">
-        <div class="ham"></div>
+        </div>
+
+        <div class="dropdown">
+          <div><a href="noticias.html">Noticias</a></div>
+            <div><a href="inicio.html">Cartografías de una Ciudad Imaginada</a></div>
+            <div><a href="proyectos.html">Proyectos</a></div>
+            <div><a href="dispositivoEscenico.html">Dispositivo Escénico</a></div>
+
+        </div>
+
       </nav>
 
       
 
-      <header>
+      <!--<header>
         <div class="slide"></div>
         
 
 
-      </header>  
+      </header>-->
       
       <article class="articulo">
         <p>Las ciudades además de estar constituidas por lo urbano y la materialización, es decir, los componentes físicos que coexisten, es también un escenario de evocaciones del deseo y sueños de sus habitantes. El presente proyecto plantea la posibilidad de comprender a la Colonia Ferrocarrilera (Colfer), que es la colonia fundadora de la ciudad de Apizaco, como un escenario de lo imaginario a partir de los símbolos construidos antropológicamente, comprendiendo al  territorio como el espacio imaginario y físico, aquel que se nombra y recorre desde la memoria e identidad de sus propios habitantes estando en constante transformación, provocando que el espacio sea una entidad fundamental de la cosmovisión de un pueblo. 
@@ -49,13 +60,40 @@
 
         
     
-        <footer>
-
+        <footer class="redes">
+          <div class="enlaces"><a hrer="avisodePrivacidad.html" >Aviso de privacidad</a> </div>
+          <div class="enlaces"><img src="media/logoCaracolColor.png"> </div>
+          <div class="enlaces"><a href="https://www.facebook.com/caracolcolectivoartistico"><img src="media/fbicon.png"> </a> </div>
+          <div class="enlaces"><a href="https://www.instagram.com/stories/caracolcolectivo/2499591989768814237/"><img src="media/IGicon.png"> </a> </div>
+          <div class="enlaces"><a href="https://twitter.com/caracoltlaxcala"><img src="media/twicon.png"> </a> </div>
+          <div class="enlaces"><a href="https://www.youtube.com/channel/UC5JROus4hKD9pE35WTBQpqQ"><img src="media/YTicon.png"> </a> </div>
         </footer>
 
     </div>
     
-    <script src="../js/app.js"></script>
+    <script>
+      var dropdown = document.querySelector("nav .dropdown ");
+      var toggle = document.querySelector("nav .menu-icon");
+      function menu(){
+        if(dropdown.style.display === "grid"){
+          dropdown.style.display = "none";
+          toggle.innerHTML = "menu";
+        }
+        else{
+          dropdown.style.display = "grid";
+          toggle.innerHTML = "close";
+        }
+        
+        }
+        
+            
+        window.addEventListener("resize", function(){
+          if (window.innerWidth > 700){
+            dropdown.style.display ="none";
+            toggle.innerHTML = "menu";
+          }
+        }
+    </script>
 
   </body>
 </html>

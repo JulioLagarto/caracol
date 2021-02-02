@@ -1,4 +1,5 @@
 @import "tipocolor";
+@import "enlaces";
 
 *{
     padding: 0px;
@@ -109,7 +110,7 @@ body
            
             
             position: relative;
-            padding: 10px;
+            padding: 0px 10px 0px 10px;
             
             width:500px;
         
@@ -126,18 +127,9 @@ body
         grid-column: 1/5;
         color:$c_rojogob;
         text-align: center;
-        font-size:xx-small;
+        font-size:smaller;
         
    }
 }
 
-.aviso {
-    grid-row:7/8;
-    background-color: $c_gris;
-    
-    a{
-        font-family:$fuente ;
-        color:$c_rojo;
-    }
-    
-}
+
