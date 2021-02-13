@@ -1,6 +1,8 @@
 @import "tipocolor";
 @import "header";
 @import "enlaces";
+@import "slider";
+
 *{    
     border:0px;
     margin: 0px;
@@ -21,7 +23,7 @@ img{
 .container{
 display: grid;
 grid-template-columns: repeat(12,1fr);
-grid-template-rows: 80px repeat(3,minmax(100px,300px)) minmax(200px,min-content) auto 150px; 
+grid-template-rows: 80px 30px repeat(3,minmax(20px,min-content)) auto 150px; 
 
 }
 
@@ -56,40 +58,29 @@ header{
 }
 
 
-.slide {
-    grid-row: 2/5;
-    grid-column: 1/13;
+.slide{
+    grid-column:1/13;
+    grid-row: 3/5;
+    display: grid;
 
-    max-width: 100%;
-    height: auto;
-    display:block;
-    background-position:center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-    
-    backface-visibility: hidden;
-    animation: slideBg 15s linear infinite 15s;
-    animation-timing-function:ease;
-    background-image: url("../media/carrusel/colferImaginada.jpg");
+    .slide-container{
+
+        align-self: center;
+        justify-self: center;
+        display: grid;
+
+        .mySlides{
+            max-width: 900px;
+
+           
+        }
+        .boton{
+            align-self: space-between;
+
+        }
+    }
 }
 
-@keyframes slideBg{
-    25%{
-        background-image:url("../media/carrusel/matachines.jpg");
-    }
-    
-    50%{
-        background-image:url("../media/carrusel/matachines.jpg");
-    }
-    
-    75%{
-        background-image:url("../media/carrusel/colferImaginada.jpg");
-    }
-    100%{
-        background-image:url("../media/carrusel/colferImaginada.jpg");
-    }
-}
 
 
 
@@ -100,8 +91,7 @@ header{
     
     }
 .container{
-
-    grid-template-rows: 80px repeat(3,minmax(100px,150px)) minmax(200px,min-content) auto 150px; 
+ 
 
 }
 
@@ -109,12 +99,11 @@ header{
 
 @media  (min-width:1000px){
     .slide{
-        grid-column: 2/12;
+        
         
         }
     .container{
     
-        grid-template-rows: 80px repeat(3,minmax(100px,180px)) minmax(200px,min-content) auto 150px; 
         .articulo{
             grid-column:3/11;
         }

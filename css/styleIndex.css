@@ -76,17 +76,18 @@ img {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 140px 100px minmax(200px, min-content) 50px auto;
-      grid-template-rows: 140px 100px minmax(200px, -webkit-min-content) 50px auto;
-      grid-template-rows: 140px 100px minmax(200px, min-content) 50px auto;
+  -ms-grid-rows: 140px 100px minmax(400px, 600px) auto 100px;
+      grid-template-rows: 140px 100px minmax(400px, 600px) auto 100px;
+  grid-auto-rows: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+}
+
+.container .img0 {
+  display: block;
 }
 
 .container .rasgado {
@@ -100,12 +101,49 @@ img {
   min-height: 100%;
 }
 
+.container .rasgado .img1 {
+  display: block;
+}
+
+.container .rasgado .img2 {
+  display: none;
+}
+
+.container .rasgado .img3 {
+  display: none;
+}
+
 .container .rasgado .logo {
   position: absolute;
-  top: 30px;
-  left: 0;
-  width: 100%;
+  top: 40px;
+  left: 0%;
+  max-width: 70%;
   height: 100%;
+}
+
+.container .rasgado .logo a img {
+  max-width: 900px;
+}
+
+.aviso {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+  background-color: #DAD7CA;
+  color: #31485F;
+  font-family: "Yusei Magic", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+}
+
+.aviso a {
+  grid-auto-flow: column;
+}
+
+.aviso a img {
+  max-height: 80px;
 }
 
 .creditos {
@@ -151,5 +189,35 @@ img {
   color: #A51D3B;
   text-align: center;
   font-size: smaller;
+}
+
+@media (min-width: 1050px) {
+  .container .rasgado .img1 {
+    display: none;
+  }
+  .container .rasgado .img2 {
+    display: block;
+  }
+  .container .rasgado .img3 {
+    display: none;
+  }
+  .container .rasgado .logo {
+    left: 20%;
+  }
+}
+
+@media (min-width: 1650px) {
+  .container .rasgado .img1 {
+    display: none;
+  }
+  .container .rasgado .img2 {
+    display: none;
+  }
+  .container .rasgado .img3 {
+    display: block;
+  }
+  .container .logo {
+    left: 60%;
+  }
 }
 /*# sourceMappingURL=styleIndex.css.map */

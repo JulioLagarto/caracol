@@ -36,10 +36,15 @@ body
 .container
 {    
     display: grid;
-    grid-template-rows: 140px 100px minmax(200px,min-content) 50px auto;
+    grid-template-rows: 140px 100px minmax(400px,600px) auto 100px;
+    grid-auto-rows: auto;
     justify-content: center;
     align-content: center;
-    height: fit-content;
+    .img0{
+        display:block;
+    }
+    
+    
    
     .rasgado{
     
@@ -49,48 +54,59 @@ body
         right:0px;
         width: 100%;
         min-height: 100%;
+        
 
-
-        img{
-
+        
             
-            
+        
+        .img1{
+            display:block;
         }
-        .logo{position: absolute;
-            top:30px;
-            left:0;
-            width: 100%;
+        .img2{
+            display: none;
+        }
+        .img3{
+            display: none;
+        }
+
+
+        .logo{
+            position: absolute;
+            top:40px;
+            left:0%;
+            max-width: 70%;
             height: 100%;
             a{
-                
                 img{
-
-                    
+                    max-width: 900px;
                     
                 }
             }
-
-                
                 
         }  
-            
-
-    
     }
-    
 
+    
+}
+
+.aviso{
+    grid-row: 5/6;
+    background-color: $c_gris;
+    color:$c_azulosc;
+    font-family: $fuente;
+    display: grid;
+    align-content: space-evenly;
+
+    a{
+        grid-auto-flow: column;
+        img{
+            max-height: 80px;
+        }
+    }
 }
 
 
-    
-
-
-
-
-
 .creditos{
-    
-    
     background-color: $c_beige;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -107,29 +123,68 @@ body
         justify-content: center;
         
         img{
-           
-            
             position: relative;
             padding: 0px 10px 0px 10px;
-            
             width:500px;
-        
-
-            
-        
         }
-
-
-
     }
-    
     .institucional{
         grid-column: 1/5;
         color:$c_rojogob;
         text-align: center;
-        font-size:smaller;
-        
+        font-size:smaller;   
    }
 }
 
+
+
+
+
+@media  (min-width: 1050px){
+.container{
+    .rasgado{
+        .img1{
+        display:none;
+         }
+
+        .img2{
+        display:block;
+        }
+
+        .img3{
+            display:none;
+            }
+        
+        .logo{
+            left:20%;
+
+        }
+    }
+}
+}
+
+@media  (min-width: 1650px){
+    .container{
+        .rasgado{
+            .img1{
+            display:none;
+             }
+    
+            .img2{
+            display:none;
+            }
+    
+            .img3{
+                display:block;
+                }
+            
+            }
+        
+            .logo{
+                left:60%;
+    
+            }
+        }
+    }
+    
 

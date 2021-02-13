@@ -35,12 +35,11 @@ nav .menu-content {
 nav .menu-content .menu-links {
   display: -ms-grid;
   display: grid;
-  grid-gap: 15px;
+  grid-gap: 0px;
   place-items: center;
   grid-auto-flow: column;
   grid-auto-columns: minmax(-webkit-min-content, 200px);
   grid-auto-columns: minmax(min-content, 200px);
-  place-items: center;
 }
 
 nav .menu-content .menu-links a {
@@ -54,7 +53,7 @@ nav .menu-content .menu-links a {
 
 nav .menu-content .menu-links a:hover {
   color: #B33317;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 nav .menu-content .menu-icon {
@@ -135,6 +134,35 @@ nav .dropdown a:hover {
   grid-row: 2/3;
 }
 
+.slide {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
+  display: -ms-grid;
+  display: grid;
+}
+
+.slide .slide-container {
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -ms-grid;
+  display: grid;
+}
+
+.slide .slide-container .mySlides {
+  max-width: 900px;
+}
+
+.slide .slide-container .boton {
+  -ms-grid-column-align: space-evenly;
+      justify-self: space-evenly;
+}
+
 * {
   border: 0px;
   margin: 0px;
@@ -156,9 +184,9 @@ img {
   display: grid;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
-  -ms-grid-rows: 80px (minmax(100px, 300px))[3] minmax(200px, min-content) auto 150px;
-      grid-template-rows: 80px repeat(3, minmax(100px, 300px)) minmax(200px, -webkit-min-content) auto 150px;
-      grid-template-rows: 80px repeat(3, minmax(100px, 300px)) minmax(200px, min-content) auto 150px;
+  -ms-grid-rows: 80px 30px (minmax(20px, min-content))[3] auto 150px;
+      grid-template-rows: 80px 30px repeat(3, minmax(20px, -webkit-min-content)) auto 150px;
+      grid-template-rows: 80px 30px repeat(3, minmax(20px, min-content)) auto 150px;
 }
 
 header {
@@ -184,76 +212,36 @@ header .titulo {
 }
 
 .slide {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
-  grid-row: 2/5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
   grid-column: 1/13;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-animation: slideBg 15s linear infinite 15s;
-          animation: slideBg 15s linear infinite 15s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  background-image: url("../media/carrusel/colferImaginada.jpg");
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  grid-row: 3/5;
+  display: -ms-grid;
+  display: grid;
 }
 
-@-webkit-keyframes slideBg {
-  25% {
-    background-image: url("../media/carrusel/matachines.jpg");
-  }
-  50% {
-    background-image: url("../media/carrusel/matachines.jpg");
-  }
-  75% {
-    background-image: url("../media/carrusel/colferImaginada.jpg");
-  }
-  100% {
-    background-image: url("../media/carrusel/colferImaginada.jpg");
-  }
+.slide .slide-container {
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -ms-grid;
+  display: grid;
 }
 
-@keyframes slideBg {
-  25% {
-    background-image: url("../media/carrusel/matachines.jpg");
-  }
-  50% {
-    background-image: url("../media/carrusel/matachines.jpg");
-  }
-  75% {
-    background-image: url("../media/carrusel/colferImaginada.jpg");
-  }
-  100% {
-    background-image: url("../media/carrusel/colferImaginada.jpg");
-  }
+.slide .slide-container .mySlides {
+  max-width: 900px;
 }
 
-@media (min-width: 700px) {
-  .container {
-    -ms-grid-rows: 80px (minmax(100px, 150px))[3] minmax(200px, min-content) auto 150px;
-        grid-template-rows: 80px repeat(3, minmax(100px, 150px)) minmax(200px, -webkit-min-content) auto 150px;
-        grid-template-rows: 80px repeat(3, minmax(100px, 150px)) minmax(200px, min-content) auto 150px;
-  }
+.slide .slide-container .boton {
+  -ms-flex-item-align: space-between;
+      -ms-grid-row-align: space-between;
+      align-self: space-between;
 }
 
 @media (min-width: 1000px) {
-  .slide {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 10;
-    grid-column: 2/12;
-  }
-  .container {
-    -ms-grid-rows: 80px (minmax(100px, 180px))[3] minmax(200px, min-content) auto 150px;
-        grid-template-rows: 80px repeat(3, minmax(100px, 180px)) minmax(200px, -webkit-min-content) auto 150px;
-        grid-template-rows: 80px repeat(3, minmax(100px, 180px)) minmax(200px, min-content) auto 150px;
-  }
   .container .articulo {
     -ms-grid-column: 3;
     -ms-grid-column-span: 8;

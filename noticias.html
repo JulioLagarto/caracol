@@ -45,7 +45,40 @@
       
 
      
-      <section class="slide"></section>
+      <section class="slide">
+        
+
+        <div class="slide-container">
+          <img class="mySlides" src="media/carrusel/colferImaginada.jpg" style="width:100%">
+          <img class="mySlides" src="media/carrusel/matachines.jpg" style="width:100%">
+          <img class="mySlides" src="img_mountains.jpg" style="width:100%">
+          <img class="mySlides" src="img_forest.jpg" style="width:100%">
+        
+          <button class="boton" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="boton" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+      </section>
 
         
     
