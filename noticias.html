@@ -49,10 +49,10 @@
         
 
         <div class="slide-container">
-          <img class="mySlides" src="media/carrusel/colferImaginada.jpg" style="width:100%">
+          <img class="mySlides" src="media/carrusel/colimag.jpg" style="width:100%">
+          <img class="mySlides" src="media/carrusel/colimag2.jpg" style="width:100%">
           <img class="mySlides" src="media/carrusel/matachines.jpg" style="width:100%">
-          <img class="mySlides" src="img_mountains.jpg" style="width:100%">
-          <img class="mySlides" src="img_forest.jpg" style="width:100%">
+          <img class="mySlides" src="media/carrusel/muneco.jpg" style="width:100%">
         
           <button class="boton" onclick="plusDivs(-1)">&#10094;</button>
           <button class="boton" onclick="plusDivs(1)">&#10095;</button>
@@ -76,6 +76,25 @@
           }
           x[slideIndex-1].style.display = "block";  
         }
+
+
+        var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+
+        slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+
+
         </script>
 
       </section>
