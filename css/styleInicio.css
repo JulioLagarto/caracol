@@ -144,6 +144,16 @@ nav .dropdown a:hover {
           box-sizing: border-box;
 }
 
+body {
+  background-image: url("../media/cartografiav3.jpg");
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #4C4974;
+}
+
 img {
   max-width: 100%;
   max-height: 100%;
@@ -198,6 +208,61 @@ header .titulo {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  opacity: .6;
+}
+
+.slide {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+  border-color: #B33317;
+  border: 20px;
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-animation: slideBg 16s linear infinite 10s;
+          animation: slideBg 16s linear infinite 10s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  background-image: url("../media/slide/1.jpg");
+}
+
+@-webkit-keyframes slideBg {
+  0% {
+    background-image: url("../media/slide/1.jpg");
+  }
+  25% {
+    background-image: url("../media/slide/2.jpg");
+  }
+  50% {
+    background-image: url("../media/slide/3.jpg");
+  }
+  75% {
+    background-image: url("../media/slide/4.jpg");
+  }
+}
+
+@keyframes slideBg {
+  0% {
+    background-image: url("../media/slide/1.jpg");
+  }
+  25% {
+    background-image: url("../media/slide/2.jpg");
+  }
+  50% {
+    background-image: url("../media/slide/3.jpg");
+  }
+  75% {
+    background-image: url("../media/slide/4.jpg");
+  }
 }
 
 @media (min-width: 700px) {

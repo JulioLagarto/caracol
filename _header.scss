@@ -4,6 +4,7 @@ nav{
     grid-column: 1/13;
     grid-row: 1/2;
     background-color: $c_naranja;
+    
     display:grid;
     grid-template-rows: minmax(min-content,100px) min-content;
     
