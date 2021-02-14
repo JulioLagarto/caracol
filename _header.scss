@@ -7,6 +7,8 @@ nav{
     
     display:grid;
     grid-template-rows: minmax(min-content,100px) min-content;
+    margin-bottom: 2px;
+    
     
     
     
@@ -15,10 +17,20 @@ nav{
     .menu-content{
         display: grid;
         
-        place-items: center;
+        place-items:center;
         grid-auto-flow: column;
         align-content: space-evenly;
-        
+
+
+            .carto{
+                img{
+                    object-fit: cover;
+                    width:50px;
+                    height:auto;
+
+
+                }
+            }
         
             .menu-links{
                 display:grid;
@@ -29,16 +41,19 @@ nav{
                 
                    
                 a{
-                    padding: 25px;
+                    padding: 0px;
                     font-family: $fuente;
                     font-weight: bolder;
                     color: $c_azulind;
                     transition: .5s;
+                    text-shadow: 0 0 3px #ff753e;
+                    text-align: center;
                    
                 }
                 a:hover{
                     color:$c_rojo;
-                    font-size: 18px;
+                    font-size: 17px;
+                    
                     
                 }
  

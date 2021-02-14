@@ -19,11 +19,14 @@
       
       <nav>
         <div class="menu-content">
-          <div></div>
+          <div class="carto">
+            <img src="media/carto.png" class="logocarto">
+          </div>
           
           <div class="menu-links">
-            <div><a href="noticias.html">Noticias</a></div>
+            
             <div><a href="inicio.html">Cartografías de una Ciudad Imaginada</a></div>
+            <div><a href="noticias.html">Noticias</a></div>
             <div><a href="proyectos.html">Proyectos</a></div>
             <div><a href="dispositivoEscenico.html">Dispositivo Escénico</a></div>
           </div>
@@ -33,8 +36,8 @@
         </div>
 
         <div class="dropdown">
-          <div><a href="noticias.html">Noticias</a></div>
             <div><a href="inicio.html">Cartografías de una Ciudad Imaginada</a></div>
+            <div><a href="noticias.html">Noticias</a></div>
             <div><a href="proyectos.html">Proyectos</a></div>
             <div><a href="dispositivoEscenico.html">Dispositivo Escénico</a></div>
 
@@ -43,7 +46,13 @@
       </nav>
 
       
-
+      <div class="creditos">
+        <div class="institucional">
+          <p>"Proyecto beneficiado por el Sistema de apoyos
+            a la creación y a proyectos culturales (Fonca)”</p>
+          <div class="fonca"><img src="media/foncaS.png"></div>
+        </div>
+      </div>
      
       <section class="slide"></section>
         
@@ -75,15 +84,19 @@
     <script>
       var dropdown = document.querySelector("nav .dropdown ");
       var toggle = document.querySelector("nav .menu-icon");
-      
+      var logoout = document.querySelector("nav .menu-content .carto");
+
       function menu(){
         if(dropdown.style.display === "grid"){
           dropdown.style.display = "none";
           toggle.innerHTML = "menu";
+          logoout.style.display = "block";
         }
         else{
           dropdown.style.display = "grid";
           toggle.innerHTML = "close";
+          logoout.style.display = "none";
+
         }
         
         }
