@@ -116,13 +116,18 @@ header{
 }
 
 @media  (min-width:700px){
+    p{
+        font-size: 18px;
+
+    }
+
 .slide{
     
     
     }
 .container{
 
-    grid-template-rows: 80px 120px repeat(2,minmax(100px,150px)) minmax(200px,min-content) auto 150px; 
+    grid-template-rows: 80px 120px repeat(2,minmax(150px,220px)) minmax(200px,min-content) auto 150px; 
 
 }
 
@@ -135,10 +140,15 @@ header{
         }
     .container{
     
-        grid-template-rows: 80px 120px repeat(2,minmax(100px,180px)) minmax(200px,min-content) auto 150px; 
+        grid-template-rows: 80px 120px repeat(2,minmax(150px,220px)) minmax(200px,min-content) auto 150px; 
         .articulo{
             grid-column:3/11;
         }
     }
     
+    p{
+        font-size: 18px;
+
+    }
+
     }

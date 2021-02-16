@@ -333,10 +333,13 @@ header .titulo {
 }
 
 @media (min-width: 700px) {
+  p {
+    font-size: 18px;
+  }
   .container {
-    -ms-grid-rows: 80px 120px (minmax(100px, 150px))[2] minmax(200px, min-content) auto 150px;
-        grid-template-rows: 80px 120px repeat(2, minmax(100px, 150px)) minmax(200px, -webkit-min-content) auto 150px;
-        grid-template-rows: 80px 120px repeat(2, minmax(100px, 150px)) minmax(200px, min-content) auto 150px;
+    -ms-grid-rows: 80px 120px (minmax(150px, 220px))[2] minmax(200px, min-content) auto 150px;
+        grid-template-rows: 80px 120px repeat(2, minmax(150px, 220px)) minmax(200px, -webkit-min-content) auto 150px;
+        grid-template-rows: 80px 120px repeat(2, minmax(150px, 220px)) minmax(200px, min-content) auto 150px;
   }
 }
 
@@ -347,14 +350,17 @@ header .titulo {
     grid-column: 2/12;
   }
   .container {
-    -ms-grid-rows: 80px 120px (minmax(100px, 180px))[2] minmax(200px, min-content) auto 150px;
-        grid-template-rows: 80px 120px repeat(2, minmax(100px, 180px)) minmax(200px, -webkit-min-content) auto 150px;
-        grid-template-rows: 80px 120px repeat(2, minmax(100px, 180px)) minmax(200px, min-content) auto 150px;
+    -ms-grid-rows: 80px 120px (minmax(150px, 220px))[2] minmax(200px, min-content) auto 150px;
+        grid-template-rows: 80px 120px repeat(2, minmax(150px, 220px)) minmax(200px, -webkit-min-content) auto 150px;
+        grid-template-rows: 80px 120px repeat(2, minmax(150px, 220px)) minmax(200px, min-content) auto 150px;
   }
   .container .articulo {
     -ms-grid-column: 3;
     -ms-grid-column-span: 8;
     grid-column: 3/11;
+  }
+  p {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=styleInicio.css.map */
