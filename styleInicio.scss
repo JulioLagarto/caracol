@@ -34,7 +34,7 @@ img{
     
 display: grid;
 grid-template-columns: repeat(12,1fr);
-grid-template-rows: 80px 100px repeat(2,minmax(100px,100px)) minmax(200px,min-content) auto 100px; 
+grid-template-rows: 80px 100px repeat(2,minmax(150px,100px)) minmax(200px,min-content) auto 100px; 
 
 }
 

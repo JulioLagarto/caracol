@@ -93,10 +93,13 @@ nav .dropdown a {
   font-family: "Yusei Magic", sans-serif;
   font-weight: bolder;
   color: #4C4974;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 nav .dropdown a:hover {
   color: #B33317;
+  font-size: 17px;
 }
 
 @media (max-width: 700px) {
