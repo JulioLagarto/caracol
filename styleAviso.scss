@@ -1,60 +1,86 @@
-*{
-    padding: 0px;
-    margin:0px;
+@import "tipocolor";
+@import "header";
+@import "enlaces";
+@import "creditos";
+
+*{    
     border:0px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
     box-sizing: border-box;
     
-}
-
-body,html
-{
-    min-height: 100%;
-}
-
-body 
-{
     
+}
+
+body{
+    background-image: url("../media/cartografiav3.jpg");
     background-color: grey;
     background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     background-size: cover;
-   }
-p{
-    text-align: justify;
+    background-color:$c_azulind;
 }
 
-   img{
+img{
     max-width: 100%;
-    max-height: 100%;
-    display: block; 
+    max-height:100%;
+    display: block;
+}
+
+.container{
+    
+display: grid;
+grid-template-columns: repeat(12,1fr);
+grid-template-rows: 80px 100px repeat(2,minmax(150px,100px)) minmax(200px,min-content) auto 100px; 
+
 }
 
 
-.container
-{    
-    display: flex;
-    justify-content: center;
-    align-content: center;
+
+
+
+header{
+    grid-column: 1/13;
+    grid-row: 2/5;
+
+    
+    
+    div{
+
+        width:100%;
+        height: auto;
+
+       
+
+    }
+
+    .titulo{
+
+        position: absolute;
+        top:0;
+        left:0;
+        max-height: 100%;   
+        max-width: 100%;
+
+    }
+}
+
+.articulo {
+    background-color:$c_gris;
+    color:$c_azulind;
+    grid-column: 1/13;
+    grid-row: 3/6;
+    padding: 2em;
+    border-radius: 3px;
+    font-size: small;
+    text-align: justify;
     height: fit-content;
-    
-}
+    opacity: .6;
 
-.rasgado{
-    
-    width:100% ;
-    height: auto;
-    
-    position: relative;
-}
 
-.logo{
-
-    position: absolute;
-    top:0px;
-    left:0px;
-}
-
-.creditos{
-
-    
 
 }
+

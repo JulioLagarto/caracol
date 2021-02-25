@@ -84,10 +84,18 @@ header{
 
            
         }
+        .botones{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
         .boton{
-            align-self: space-between;
+           height: 40px;
+           width: 40px;
 
         }
+    }
     }
 }
 

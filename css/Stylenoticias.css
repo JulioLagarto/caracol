@@ -118,7 +118,7 @@ nav .dropdown a:hover {
   -ms-grid-row: 7;
   -ms-grid-row-span: 1;
   grid-row: 7/8;
-  background-color: #DAD7CA;
+  background-color: #F7B069;
   display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: space-evenly;
@@ -132,19 +132,24 @@ nav .dropdown a:hover {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .redes .enlaces img {
-  max-height: 90px;
+  max-height: 80px;
+  padding: 15px;
 }
 
 .redes .aviso {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  color: #4C4974;
 }
 
 * {
@@ -229,10 +234,21 @@ header .titulo {
   max-width: 900px;
 }
 
-.slide .slide-container .boton {
-  -ms-flex-item-align: space-between;
-      -ms-grid-row-align: space-between;
-      align-self: space-between;
+.slide .slide-container .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slide .slide-container .botones .boton {
+  height: 40px;
+  width: 40px;
 }
 
 @media (min-width: 1000px) {

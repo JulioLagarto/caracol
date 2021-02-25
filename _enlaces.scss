@@ -2,7 +2,7 @@
 
      grid-column: 1/13;
      grid-row: 7/8;
-     background-color: $c_gris;
+     background-color: $c_naranja;
      display: grid;
      
      align-content: space-evenly;
@@ -10,14 +10,17 @@
      grid-template-rows: 100px 30px;
      .enlaces{
          grid-row: 1/2;
-         display:grid;
-         grid-auto-flow: column;
+         display:flex;
+         align-items:center;
+         justify-content: center;
+
         img{
-            max-height: 90px;
+            max-height: 80px;
+            padding:15px;
         }
      }
      .aviso{
-         grid-row: 2/3;
+         color:$c_azulind;
 
      }
 
