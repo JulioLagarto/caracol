@@ -2,6 +2,7 @@
 @import "header";
 @import "enlaces";
 @import "slider";
+@import "creditos";
 
 *{    
     border:0px;
@@ -33,7 +34,7 @@ img{
 .container{
 display: grid;
 grid-template-columns: repeat(12,1fr);
-grid-template-rows: 80px 30px repeat(3,minmax(20px,min-content)) auto 150px; 
+grid-template-rows: 80px 100px repeat(3,minmax(20px,min-content)) auto 150px; 
 
 }
 
@@ -70,7 +71,7 @@ header{
 
 .slide{
     grid-column:1/13;
-    grid-row: 3/5;
+    grid-row: 3/6;
     display: grid;
 
     .slide-container{
@@ -109,7 +110,7 @@ header{
     
     }
 .container{
- 
+    grid-template-rows: 80px 120px repeat(2,minmax(150px,300px)) minmax(200px,min-content) auto 150px; 
 
 }
 
@@ -121,6 +122,7 @@ header{
         
         }
     .container{
+        grid-template-rows: 80px 120px repeat(2,minmax(150px,220px)) minmax(200px,min-content) auto 150px; 
     
         .articulo{
             grid-column:3/11;

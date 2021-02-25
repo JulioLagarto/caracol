@@ -150,6 +150,7 @@ nav .dropdown a:hover {
 
 .redes .aviso {
   color: #4C4974;
+  justify-self: flex-end;
 }
 
 .creditos {

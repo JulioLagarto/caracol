@@ -37,7 +37,7 @@ body
 {    
     display: grid;
     
-    grid-template-rows: 140px 0px minmax(300px,500px) 120px auto;
+    grid-template-rows: 140px 0px minmax(300px,500px) minmax(120px,min-content) auto;
     grid-auto-rows: auto;
     
     
@@ -151,7 +151,7 @@ body
 
 @media  (min-width: 650px){
     .container{
-        grid-template-rows: 140px 0px minmax(400px,600px) auto 100px;
+        grid-template-rows: 140px 0px minmax(400px,600px) minmax(100px,min-content) 100px;
 
         .rasgado{
 
@@ -189,7 +189,7 @@ body
 @media  (min-width: 1050px){
     
     .container{
-        grid-template-rows: 140px 0px minmax(400px,600px) auto 100px;
+        grid-template-rows: 140px 0px minmax(400px,600px) minmax(100px,min-content) 100px;
 
         .rasgado{
 
@@ -225,7 +225,7 @@ body
 @media  (min-width: 1650px){
    
     .container{
-        grid-template-rows: 140px 0px minmax(400px,600px) auto 100px;
+        grid-template-rows: 140px 0px minmax(400px,600px) minmax(100px,min-content) 100px;
 
         .rasgado{
 

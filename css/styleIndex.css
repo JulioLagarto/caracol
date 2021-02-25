@@ -39,8 +39,9 @@ img {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 140px 0px minmax(300px, 500px) 120px auto;
-      grid-template-rows: 140px 0px minmax(300px, 500px) 120px auto;
+  -ms-grid-rows: 140px 0px minmax(300px, 500px) minmax(120px, min-content) auto;
+      grid-template-rows: 140px 0px minmax(300px, 500px) minmax(120px, -webkit-min-content) auto;
+      grid-template-rows: 140px 0px minmax(300px, 500px) minmax(120px, min-content) auto;
   grid-auto-rows: auto;
 }
 
@@ -166,8 +167,9 @@ img {
 
 @media (min-width: 650px) {
   .container {
-    -ms-grid-rows: 140px 0px minmax(400px, 600px) auto 100px;
-        grid-template-rows: 140px 0px minmax(400px, 600px) auto 100px;
+    -ms-grid-rows: 140px 0px minmax(400px, 600px) minmax(100px, min-content) 100px;
+        grid-template-rows: 140px 0px minmax(400px, 600px) minmax(100px, -webkit-min-content) 100px;
+        grid-template-rows: 140px 0px minmax(400px, 600px) minmax(100px, min-content) 100px;
   }
   .container .rasgado {
     background-image: url("../media/rasgado1.png");
@@ -193,8 +195,9 @@ img {
 
 @media (min-width: 1050px) {
   .container {
-    -ms-grid-rows: 140px 0px minmax(400px, 600px) auto 100px;
-        grid-template-rows: 140px 0px minmax(400px, 600px) auto 100px;
+    -ms-grid-rows: 140px 0px minmax(400px, 600px) minmax(100px, min-content) 100px;
+        grid-template-rows: 140px 0px minmax(400px, 600px) minmax(100px, -webkit-min-content) 100px;
+        grid-template-rows: 140px 0px minmax(400px, 600px) minmax(100px, min-content) 100px;
   }
   .container .rasgado {
     background-image: url("../media/rasgado2.png");
@@ -220,8 +223,9 @@ img {
 
 @media (min-width: 1650px) {
   .container {
-    -ms-grid-rows: 140px 0px minmax(400px, 600px) auto 100px;
-        grid-template-rows: 140px 0px minmax(400px, 600px) auto 100px;
+    -ms-grid-rows: 140px 0px minmax(400px, 600px) minmax(100px, min-content) 100px;
+        grid-template-rows: 140px 0px minmax(400px, 600px) minmax(100px, -webkit-min-content) 100px;
+        grid-template-rows: 140px 0px minmax(400px, 600px) minmax(100px, min-content) 100px;
   }
   .container .rasgado {
     background-image: url("../media/rasgado3.png");
