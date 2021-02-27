@@ -64,8 +64,11 @@ body
                    
             max-width: 100%;
             height: 200px;
-            display: grid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             align-self: center;
+
             transition: 1s;
             
             
@@ -80,19 +83,22 @@ body
                
                display:block;
                 img{
-                    max-height: 220px;
-                
+                    padding:20px;
+                    max-height: 100px;
+                    max-width: 100px;
+                    transition: 3s;
                 }
             }
             
             
                 
         } 
-        /*.logo:hover{
-            img{
+        .logo .logo0 img:hover{
+            
                 max-height:230px;
-            }
-        }*/
+                max-width: 230px;
+            
+        }
     }
 
     
