@@ -72,37 +72,69 @@ body
             transition: 1s;
             
             
-            .logo1{
-                display:none;
+            .apagado1{
+                
+                order:1;
                 
                 img{
-                    max-height: 300px;  
+                    padding:20px;
+                    max-height: 120px;
+                    max-width: 120px;
+                    transition: 3s;
+                    filter:grayscale(70%) sepia(40%) blur(1px) opacity(50%);
                 }
             }
-            .logo0{
-               
-               display:block;
+      
+            .apagado2{
+                
+                order:3;
+                
                 img{
                     padding:20px;
-                    max-height: 100px;
-                    max-width: 100px;
+                    max-height: 120px;
+                    max-width: 120px;
                     transition: 3s;
+                    filter:grayscale(70%) sepia(40%) blur(1px) opacity(50%);
+                }
+            }
+              
+              
+            }
+            .activo
+            {
+
+                order: 2;
+                img{
+                    padding:20px;
+                    max-height: 250px;
+                    max-width: 250px;
+                    transition: 3s;
+                 
                 }
             }
             
             
                 
         } 
-        .logo .logo0 img:hover{
+        .logo #logo0 img:hover{
             
-                max-height:230px;
-                max-width: 230px;
+                max-height:140px;
+                max-width: 140px;
+                filter: opacity(60%);
             
         }
+
+        .logo #logo1 img:hover{
+            
+            max-height:140px;
+            max-width: 140px;
+            filter: opacity(60%);
+        
+    }
     }
 
     
-}
+
 
 .aviso{
     grid-row: 4/5;
@@ -264,3 +296,4 @@ body
 
     }
 
+ 

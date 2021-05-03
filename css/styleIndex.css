@@ -80,29 +80,64 @@ img {
   transition: 1s;
 }
 
-.container .rasgado .logo .logo1 {
-  display: none;
+.container .rasgado .logo .apagado1 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
-.container .rasgado .logo .logo1 img {
-  max-height: 300px;
-}
-
-.container .rasgado .logo .logo0 {
-  display: block;
-}
-
-.container .rasgado .logo .logo0 img {
+.container .rasgado .logo .apagado1 img {
   padding: 20px;
-  max-height: 100px;
-  max-width: 100px;
+  max-height: 120px;
+  max-width: 120px;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-filter: grayscale(70%) sepia(40%) blur(1px) opacity(50%);
+          filter: grayscale(70%) sepia(40%) blur(1px) opacity(50%);
+}
+
+.container .rasgado .logo .apagado2 {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.container .rasgado .logo .apagado2 img {
+  padding: 20px;
+  max-height: 120px;
+  max-width: 120px;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-filter: grayscale(70%) sepia(40%) blur(1px) opacity(50%);
+          filter: grayscale(70%) sepia(40%) blur(1px) opacity(50%);
+}
+
+.container .rasgado .activo {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.container .rasgado .activo img {
+  padding: 20px;
+  max-height: 250px;
+  max-width: 250px;
   -webkit-transition: 3s;
   transition: 3s;
 }
 
-.container .rasgado .logo .logo0 img:hover {
-  max-height: 230px;
-  max-width: 230px;
+.container .logo #logo0 img:hover {
+  max-height: 140px;
+  max-width: 140px;
+  -webkit-filter: opacity(60%);
+          filter: opacity(60%);
+}
+
+.container .logo #logo1 img:hover {
+  max-height: 140px;
+  max-width: 140px;
+  -webkit-filter: opacity(60%);
+          filter: opacity(60%);
 }
 
 .aviso {
